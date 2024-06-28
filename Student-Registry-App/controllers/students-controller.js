@@ -49,6 +49,7 @@ function setup(app, students) {
       email: req.body.email
     };
     students.push(student);
+    
     res.redirect('/students');
   });
 }
