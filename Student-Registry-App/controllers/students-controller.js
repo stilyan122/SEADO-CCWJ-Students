@@ -44,12 +44,13 @@ function setup(app, students) {
       res.render('add-student', model);
       return;
     }
+    
     let student = {
       name: req.body.name,
       email: req.body.email
     };
     students.push(student);
-    
+
     res.redirect('/students');
   });
 }
